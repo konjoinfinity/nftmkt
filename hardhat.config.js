@@ -10,12 +10,12 @@ module.exports = {
     // polygon testnet
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [process.env.privateKey] // your wallet private key
+      accounts: ["12ad0d85aa74706f112de41bacdbee926da90ddd405d84d0ddac2e31f7ab5e43"] // your wallet private key
     },
     //polygon mainnet
     matic: {
       url: "https://rpc-mainnet.maticvigil.com",
-      accounts: [process.env.privateKey]
+      accounts: ["12ad0d85aa74706f112de41bacdbee926da90ddd405d84d0ddac2e31f7ab5e43"]
     }
   },
   solidity: {

@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
               Create NFT
             </a>
           </Link>
-          <Link href="/nftowns">
+          <Link href="/mynfts">
             <a className="mr-6">
               My NFTs
             </a>

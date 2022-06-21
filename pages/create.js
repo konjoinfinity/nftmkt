@@ -104,6 +104,10 @@ export default function CreateItem() {
     let transaction = null
     try {
       transaction = await contract.createToken(url, price, { value: listingPrice })
+    //   setTimeout(() => {
+    //     console.log("Delayed for 8 second."); 
+    //     router.push("/");
+    // }, "8000")
       //console.log('9.1. contract.createToken------success', transaction)
     } catch (error) {
       //console.log('9.2. contract.createToken------error', error)
@@ -114,7 +118,7 @@ export default function CreateItem() {
     try {
       await transaction.wait()
       router.push("/");
-      console.log("Waited")
+    //   console.log("Waited")
       //console.log('10.1 transaction.wait------success')
     } catch (error) {
       //console.log('10.2 transaction.wait------error', error)
